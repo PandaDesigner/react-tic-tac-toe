@@ -21,7 +21,12 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
-        ]
-    }
+        ],
+    },
+    plugins: [ new CleanWebpackPlugin(), htmlWebpackPlugin({
+        template: ',/public/index.html',
+    },
+    ),
+],
 
 }
