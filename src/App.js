@@ -1,12 +1,12 @@
-import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
-const App = () => {
+function App() {
   return (
-    <div className="app">
-        <h1>Hola React</h1>
+    <div className="App">
+
     </div>
-  )
+  );
 }
 
 export default App;
