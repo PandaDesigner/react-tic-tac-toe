@@ -18,8 +18,8 @@ class Titulo extends React.Component {
 
   render(){
     return(
-    <div className="bg-titulo">
-      <h1>Juego DE TIC TOC TOE</h1>
+    <div className="bg-titulo bg-primary border">
+      <h1 className="display-2">Juego DE TIC TOC TOE</h1>
       <h3> Pedro Fernandez </h3>
     </div>)
   }
@@ -110,7 +110,7 @@ class Game extends React.Component {
         'Go to game start';
       return (
         <li key={move}>
-          <button className="btn btn-primary mb-2" onClick={() => this.jumpTo(move)}>{desc}</button>
+          <button className="btn btn-info mb-2" onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
       );
     });
@@ -133,7 +133,7 @@ class Game extends React.Component {
           />
         </div>
         <div className="game-info">
-          <div>{status}</div>
+          <div><h4>{status}</h4></div>
           <ol>{moves}</ol>
         </div>
       </div>
