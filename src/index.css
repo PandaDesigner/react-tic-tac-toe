@@ -34,6 +34,14 @@ ol, ul{
   text-align: center;
   width: 34px;
 }
+.bg-titulo{
+  background: blue;
+  display: block;
+  text-align: center;
+  padding: 50px;
+  margin-bottom:  50px ;
+  color: white;
+}
 
 .square:focus{
   outline: none;
@@ -46,6 +54,9 @@ ol, ul{
 .game {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
 }
 
 .game-info {
